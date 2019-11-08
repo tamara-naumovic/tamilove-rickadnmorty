@@ -1,0 +1,57 @@
+html, body {
+    height: 100%;
+}
+
+#about-show {
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+#levo-about, #btn-levo-about {
+    text-align: right;
+}
+
+.row {
+    width: 100%;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #fff100;
+    border-color: #fff100;
+}
+
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #e7dc00;
+    border-color: #c9bf00;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(198, 173, 60, 0.5);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #fff;
+    background-color: #fff100;
+    border-color: #fff100;
+}
+
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #fff100;
+  border-color: #fff100;
+}
