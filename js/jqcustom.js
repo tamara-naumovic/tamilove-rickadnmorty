@@ -68,7 +68,17 @@ $(document).ready(function () {
 
         //Prvo ćemo pokupiti naš templejt iz index.html-a i pretvoriti ga u string
         var charModal = $('.modal-template').prop('outerHTML');
-        console.log(charModal);
+        let fa = ["fas fa-brain",
+            "fas fa-dna",
+            "fas fa-globe",
+            "fas fa-atom",
+            "fas fa-biohazard",
+            "fas fa-meteor",
+            "fas fa-moon",
+            "fas fa-radiation",
+            "fas fa-rocket",
+            "fas fa-satellite-dish",
+            "fas fa-user-astronaut"]
         var newHtml;
         $('.modal-template').remove();
         //koriščenjem map funkcije na svaki objekat u charData primenićemo funkciju, kojoj prosleđujemo element el do kog je map stigao, kako i njegov index i
@@ -82,12 +92,12 @@ $(document).ready(function () {
             newHtml = newHtml.replace("%date-creation%", el.created);
             newHtml = newHtml.replace("%char-img-scr%", el.image);
             newHtml = newHtml.replace("%char-modal-id%", i);
-            console.log(newHtml);
+            newHtml = newHtml.replace("%fa-icon%", fa[Math.floor(Math.random()*fa.length)]);
 
             //dodajemo taj element na kraj diva id ="characters"
             $("#modals").append(newHtml);
         });
-
+        
         //Posto smo dodali sve elemente, templejt brišemo
         
     }
