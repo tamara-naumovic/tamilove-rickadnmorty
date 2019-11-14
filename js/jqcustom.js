@@ -1,3 +1,6 @@
+//Side note:
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+
 //Kada se učita naš document hoćemo da se naredna funkcija izvrši
 $(document).ready(function () {
 
